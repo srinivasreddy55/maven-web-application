@@ -73,7 +73,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
   <button type="submit" class="btn">Register</button>
 </form>
-
 </body>
 </html>
 
