@@ -3,7 +3,7 @@ pipeline{
 agent any
 
 tools{
-maven 'Maven 3.8.6'
+maven 'Maven 3.9.0'
 
 }
 
@@ -24,13 +24,27 @@ stages{
 	
 	}
   }
+ stage('Build') {
+            steps {
+                echo 'Build is Completed'
+            }
+        }
+        stage('Testing') {
+            steps {
+                echo 'Testing Completed'
+            }
+        }
+        tage('Deployment') {
+            steps {
+                echo 'Deployment Completed'
+            }
+        }
   
-  stage('Build'){
+/*  stage('Build'){
   steps{
   sh  "mvn clean package"
   }
   }
-/*
  stage('ExecuteSonarQubeReport'){
   steps{
   sh  "mvn clean sonar:sonar"
