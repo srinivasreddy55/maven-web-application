@@ -34,7 +34,7 @@ stages{
                 echo 'Testing Completed'
             }
         }
-        tage('Deployment') {
+        stage('Deployment') {
             steps {
                 echo 'Deployment Completed'
             }
