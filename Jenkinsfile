@@ -3,7 +3,7 @@ pipeline{
 agent any
 
 tools{
-maven 'Maven 3.9.0'
+maven 'Maven 3.9.1'
 
 }
 
@@ -64,7 +64,7 @@ stages{
   }
   }
   }
-  */
+  
 }//Stages Closing
 
 post{
@@ -88,6 +88,7 @@ post{
           body: "Pipeline Build is over .. Build # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
           replyTo: 'devopstrainingblr@gmail.com'
  }
+ */
 }
 
 
