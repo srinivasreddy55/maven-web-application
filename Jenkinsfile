@@ -38,11 +38,7 @@ stages{
             steps {
                 echo 'Deployment Completed'
             }
-		stage('Deployment') {
-            steps {
-                echo 'Deployment Completed'
-            }
-        }
+	}
   
 /*  stage('Build'){
   steps{
