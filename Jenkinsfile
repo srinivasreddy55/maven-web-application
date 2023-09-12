@@ -39,6 +39,11 @@ stages{
                 echo 'Deployment Completed'
             }
 	}
+	stage('Code Quality') {
+            steps {
+                echo 'Quality Completed'
+            }
+	}
   
 /*  stage('Build'){
   steps{
